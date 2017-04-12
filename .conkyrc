@@ -55,7 +55,7 @@ ${fs_bar /home}
 #${if_mounted /mnt} 
 ${color1}mnt: ${alignr}${color0}${fs_free /mnt}/${fs_size /mnt}
 ${fs_bar /mnt}
-${if}
+#${if}
 ${stippled_hr 2 1}
 ${color2}${alignr}Network
 ${color1}eth:  ${color1}down:${color0} ${downspeed eth0} k/s ${color1}  up:${color0} ${upspeed eth0} k/s
