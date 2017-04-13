@@ -50,10 +50,9 @@ ${color2}${alignr}Memory
 ${color1}ram: ${color0}$memperc%${alignr}${membar 6,135}
 ${stippled_hr 2 1}
 ${color2}${alignr}Space
-${color1}home: ${alignr}${color0}${fs_free /home}/${fs_size /home}
+${color1}home: ${alignr}${color0}${fs_used /home}/${fs_size /home}
 ${fs_bar /home}
-#${if_mounted /mnt} 
-${color1}mnt: ${alignr}${color0}${fs_free /mnt}/${fs_size /mnt}
+${color1}root: ${alignr}${color0}${fs_used /}/${fs_size /}
 ${fs_bar /mnt}
 #${if}
 ${stippled_hr 2 1}
