@@ -1,0 +1,8 @@
+Intentional OS: FreeBSD
+The coretemp scripts are meant to provide the temperatures of your first 2 cores using the "coretemp" driver.
+See the manual of coretemp for more info about that.
+Put "coretemp_enable="YES" in your /boot/loader.conf file.
+Make both the coretemp scripts executable with:
+"chmod +x .conky-temp-core1"
+"chmod +x .conky-temp-core2"
+

@@ -1,0 +1,1 @@
+sysctl dev.cpu | grep dev.cpu.0.temperature | cut -c24-27

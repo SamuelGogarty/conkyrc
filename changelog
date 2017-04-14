@@ -1,0 +1,5 @@
+First tracked changelog of first major commit:
+- Increased overall size of conky slightly.
+- Changed the font color to a darker blue for easier time reading.
+- Got the correct free storage / capacity readings for FreeBSD.
+- Implemented readings of the first 2 cpu cores with "coretemp".

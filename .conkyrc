@@ -3,7 +3,7 @@ conky.config = {
 	background = true,
 
 	use_xft = true,
-	font = 'AvantGarde LT Medium:size=8',
+	font = 'AvantGarde LT Medium:size=10',
 	xftalpha = 0.8,
 
 	update_interval = 1.0,
@@ -28,9 +28,9 @@ conky.config = {
 
 --use_spaces yes
 
-	color0 = '#4FC9FD',
-	color1 = 'slategrey',
-	color2 = '#ffffff',
+	color0 = '#0B00A9',
+	color1 = '#0B00A9',
+	color2 = '#0B00A9',
 
 };
 
@@ -54,7 +54,6 @@ ${color1}home: ${alignr}${color0}${fs_used /home}/${fs_size /home}
 ${fs_bar /home}
 ${color1}root: ${alignr}${color0}${fs_used /}/${fs_size /}
 ${fs_bar /mnt}
-#${if}
 ${stippled_hr 2 1}
 ${color2}${alignr}Network
 ${color1}eth:  ${color1}down:${color0} ${downspeed eth0} k/s ${color1}  up:${color0} ${upspeed eth0} k/s
@@ -62,7 +61,9 @@ ${color1}wlan: ${color1}down:${color0} ${downspeed wlan0} k/s ${color1}  up:${co
 ${stippled_hr 2 1}
 ${color2}${alignr}Battery
 ${color1}AC Adapter: ${color0}$acpiacadapter
-${color1}Battery:    ${color0}$battery 
+${color1}Battery:    ${color0}$battery
+${color1}Core 1:     ${color0}${execi 10 ~/.conky-temp-core1}°C
+${color1}Core 2:     ${color0}${execi 10 ~/.conky-temp-core2}°C
 ${stippled_hr 2 1}
 ]];
 
